@@ -286,10 +286,10 @@ export class SystemFlowCard extends LitElement {
     }
 
     const svgLineMapByPosition = {
-      'left':   (pc, ipc)  => `M 100 ${ipc},  C 50 ${ipc},   50 ${pc},   0 ${pc}`,
-      'top':    (pc, ipc)  => `M ${ipc} 100,  C ${ipc} 50,   ${pc} 50,   ${pc} 0`,
-      'right':  (pc, ipc)  => `M 0 ${ipc},    C 50 ${ipc},   50 ${pc},   100 ${pc}`,
-      'bottom': (pc, ipc)  => `M ${ipc} 0,    C ${ipc} 50,   ${pc} 50,   ${pc} 100`,
+      'left':   (pc, ipc)  => `M 100 ${ipc}   C 50 ${ipc}    50 ${pc}    0 ${pc}`,
+      'top':    (pc, ipc)  => `M ${ipc} 100   C ${ipc} 50    ${pc} 50    ${pc} 0`,
+      'right':  (pc, ipc)  => `M 0 ${ipc}     C 50 ${ipc}    50 ${pc}    100 ${pc}`,
+      'bottom': (pc, ipc)  => `M ${ipc} 0     C ${ipc} 50    ${pc} 50    ${pc} 100`,
     };
 
     const avgSystemTotal = elements
